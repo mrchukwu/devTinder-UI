@@ -1,4 +1,15 @@
-# React + Vite
+# Dev Tinder Project
+
+- Project initialized with git to enable keep and update progress track.
+- Project setup with Vite
+
+## DevTinder UI
+
+- This is the Dev Tinder UI (User Inerface) web application
+
+
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
