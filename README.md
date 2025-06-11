@@ -8,7 +8,11 @@
 - This is the Dev Tinder UI (User Inerface) web application
 - fist create Vite + React application
 - remove uncessary code and create a Hello World
-- install Tailwind CSS
+- install Tailwind CSS and configured
+- Daisy UI installed and configured
+- Add navbar compnent to App.jsx
+- Create a NavBar.jsx separate component and embed in the App.jsx
+- installed react-router-dom
 
 
 ## React + Vite
