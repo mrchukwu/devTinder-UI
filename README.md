@@ -6,7 +6,8 @@
 ## DevTinder UI
 
 - This is the Dev Tinder UI (User Inerface) web application
-
+- fist create Vite + React application
+- remove uncessary code and create a Hello World
 
 
 ## React + Vite
