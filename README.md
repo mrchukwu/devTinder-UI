@@ -1,7 +1,7 @@
 # Dev Tinder Project
 
 - Project initialized with git to enable keep and update progress track.
-- Project setup with Vite
+- Project setup with Vite + Reactjs
 
 ## DevTinder UI
 
@@ -15,6 +15,12 @@
 - installed react-router-dom
 - created BrowserRouter
 - created Routes, Route and nested Route inside the body Body Route
+- Created Footer.
+- Install Axios
+- CORS - instal cors in backend => add cors middleware with configurations: origin, cridentials; true
+- When ever your making API call pass axios => {withCredentials: true}
+- Installed redux toolkit : npm install @reduxjs/toolkit react-redux https://redux-toolkit.js.org/tutorials/quick-start
+
 
 
 ## React + Vite
