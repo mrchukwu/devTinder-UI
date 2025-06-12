@@ -13,6 +13,8 @@
 - Add navbar compnent to App.jsx
 - Create a NavBar.jsx separate component and embed in the App.jsx
 - installed react-router-dom
+- created BrowserRouter
+- created Routes, Route and nested Route inside the body Body Route
 
 
 ## React + Vite
