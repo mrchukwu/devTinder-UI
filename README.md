@@ -9,15 +9,15 @@
 - fist create Vite + React application
 - remove uncessary code and create a Hello World
 - install Tailwind CSS and configured
-- Daisy UI installed and configured
+- Daisy UI installed and configured  https://daisyui.com/
 - Add navbar compnent to App.jsx
 - Create a NavBar.jsx separate component and embed in the App.jsx
 - installed react-router-dom
 - created BrowserRouter
-- created Routes, Route and nested Route inside the body Body Route
+- created Routes, Route and nested Route inside the body Body Route https://reactrouter.com/6.30.1/start/tutorial
 - Created Footer.
-- Install Axios
-- CORS - instal cors in backend => add cors middleware with configurations: origin, cridentials; true
+- Install Axios https://www.npmjs.com/package/axios
+- CORS - instal cors in backend => add cors middleware with configurations: origin, cridentials; true : https://www.npmjs.com/package/cors
 - When ever your making API call pass axios => {withCredentials: true}
 - Installed redux toolkit : npm install @reduxjs/toolkit react-redux https://redux-toolkit.js.org/tutorials/quick-start
 
