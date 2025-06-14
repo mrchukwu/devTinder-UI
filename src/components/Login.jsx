@@ -1,17 +1,28 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import {addUser, removeUser } from "../utils/userSlice"
+import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../utils/constants';
 
 const Login = () => {
 
-    const [emailId, setEmailId] = useState("jane@gmail.com");
-    const [password, setPassword] = useState("@Jane123");
+    const [emailId, setEmailId] = useState("kennedy@gmail.com");
+    const [password, setPassword] = useState("@Kennedy123");
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleLogin = async () => {
         try{
-            const res = await axios.post("http://localhost:3000/login", {
+            const res = await axios.post(BASE_URL + "/login", 
+            {
                 emailId,
                 password
-            }, {withCredentials: true})
+            }, {withCredentials: true}
+        );
+            dispatch(addUser(res.data));
+            return navigate("/");
+
         }catch(err){
             console.error(err)
         }
@@ -44,9 +55,10 @@ const Login = () => {
                 value={password} 
                 required 
                 placeholder="******" 
-                onChange={(e) => setEmailId(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
                 />
             </fieldset>
+            <div className="mb-2"><a href="#">forgot password</a></div>
             </div>
             <div className="card-actions justify-center">
             <button className="btn btn-primary btn-wide" onClick={handleLogin}>Login</button>

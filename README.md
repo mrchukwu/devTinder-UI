@@ -12,7 +12,7 @@
 - Daisy UI installed and configured  https://daisyui.com/
 - Add navbar compnent to App.jsx
 - Create a NavBar.jsx separate component and embed in the App.jsx
-- installed react-router-dom
+- installed react-router-dom  https://reactrouter.com/6.30.1/start/tutorial
 - created BrowserRouter
 - created Routes, Route and nested Route inside the body Body Route https://reactrouter.com/6.30.1/start/tutorial
 - Created Footer.
@@ -20,6 +20,12 @@
 - CORS - instal cors in backend => add cors middleware with configurations: origin, cridentials; true : https://www.npmjs.com/package/cors
 - When ever your making API call pass axios => {withCredentials: true}
 - Installed redux toolkit : npm install @reduxjs/toolkit react-redux https://redux-toolkit.js.org/tutorials/quick-start
+- Configurestore => Provider => CreateSlice => add reducer to store
+- Added redux devTool extension in browser
+- Worked on Login and checking if reciving data properly in store
+- Worked on Navbar to update user's "welcome + user's firstname" once user is logged in
+- Refactored code to add constants file and created a BASE_URL with the localhost. Created a        component folder and moved all components inside it.
+
 
 
 
