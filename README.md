@@ -25,6 +25,10 @@
 - Worked on Login and checking if reciving data properly in store
 - Worked on Navbar to update user's "welcome + user's firstname" once user is logged in
 - Refactored code to add constants file and created a BASE_URL with the localhost. Created a        component folder and moved all components inside it.
+- Cant access other routes without login
+- if Token is not present, redirect user to login
+- Logout feature
+- Profile page
 
 
 
