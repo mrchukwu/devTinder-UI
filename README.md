@@ -27,7 +27,7 @@
 - Refactored code to add constants file and created a BASE_URL with the localhost. Created a        component folder and moved all components inside it.
 - Cant access other routes without login
 - if Token is not present, redirect user to login
-- Logout feature
+- Logout feature created
 - Profile page
 
 
