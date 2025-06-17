@@ -31,6 +31,7 @@
 - Profile page
 - Edit profile created
 - Notification on updating profile created (show toast)
+- Created a connection page
 
 
 
