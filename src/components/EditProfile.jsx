@@ -128,7 +128,7 @@ const EditProfile = ({user}) => {
                         <fieldset className="fieldset ">
                                 <legend className="fieldset-legend">Your bio:</legend>
                                 <textarea 
-                                className="input" 
+                                className="textarea textarea-lg" 
                                 type="email" 
                                 value={about} 
                                 required 
