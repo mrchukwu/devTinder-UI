@@ -29,6 +29,8 @@
 - if Token is not present, redirect user to login
 - Logout feature created
 - Profile page
+- Edit profile created
+- Notification on updating profile created (show toast)
 
 
 
