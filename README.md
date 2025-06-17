@@ -31,7 +31,9 @@
 - Profile page
 - Edit profile created
 - Notification on updating profile created (show toast)
-- Created a connection page
+- Created a connection page to see all connections
+- created page to see all request connecttions
+- Created a feature to accept and reject connection request
 
 
 
