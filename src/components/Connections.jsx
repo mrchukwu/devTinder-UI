@@ -10,12 +10,12 @@ const Connections = () => {
 
   const fetchConnections = async() => {
     
-try{
-    const res = await axios.get(BASE_URL + "/user/connections", {withCredentials: true});
-    dispatch(addConections(res?.data?.data));
-  }catch(err){
-    console.log(err.message);
-}
+  try{
+      const res = await axios.get(BASE_URL + "/user/connections", {withCredentials: true});
+      dispatch(addConections(res?.data?.data));
+    }catch(err){
+      console.log(err.message);
+  }
 }
 
   
@@ -24,11 +24,11 @@ try{
   }, [])
 
   if(!connections) return;
-  if(connections.length === 0) return <h1>No Connenctions Found</h1>
+  if(connections.length === 0) return <h1 className='text-center my-8 text-lg'>No Connenctions Found</h1>
 
   return (
     <div className='text-center my-10'>
-      <h1 className='text-bold text-4xl text-white'>Connections</h1>
+      <h1 className='text-bold text-4xl  text-white'>Connections</h1>
       {connections.map(connection => {
         const {_id, firstName, lastName, photoUrl, age, gender, about} = connection
          return (

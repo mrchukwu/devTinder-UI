@@ -34,6 +34,8 @@
 - Created a connection page to see all connections
 - created page to see all request connecttions
 - Created a feature to accept and reject connection request
+- Created SignUp feature, to create a new user
+- E2E => did end to end testing
 
 
 

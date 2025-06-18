@@ -5,12 +5,12 @@ import { BASE_URL } from '../utils/constants';
 import { useDispatch } from 'react-redux';
 
 const EditProfile = ({user}) => {
-  const [firstName, setFirstName] = useState(user.user.firstName);  
-  const [lastName, setLastName] = useState(user.user.lastName);
-  const [photoUrl, setPhotoUrl] = useState(user.user.photoUrl);
-  const [age, setAge] = useState(user.user.age);
-  const [gender, setGender] = useState(user.user.gender);
-  const [about, setAbout] = useState(user.user.about);
+  const [firstName, setFirstName] = useState(user?.user?.firstName || "");  
+  const [lastName, setLastName] = useState(user?.user?.lastName || "");
+  const [photoUrl, setPhotoUrl] = useState(user?.user?.photoUrl);
+  const [age, setAge] = useState(user?.user?.age || "");
+  const [gender, setGender] = useState(user?.user?.gender || "");
+  const [about, setAbout] = useState(user?.user?.about || "");
   const [error, setError] = useState("")
   const dispatch = useDispatch();
   const [showToast, setShowToast] = useState(false);
@@ -29,7 +29,7 @@ const EditProfile = ({user}) => {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 3000);
     } else {
-        setError(err?.response?.data || "An error occurred while updating profile.")
+        setError(error?.response?.data || "An error occurred while updating profile.")
     }
         // dispatch(res?.data?.data)
         // setShowToast(true);
@@ -53,7 +53,7 @@ const EditProfile = ({user}) => {
         </div>)
         }
         <div className='flex justify-center my-3'>
-        <h1 className='tex'>Hello {firstName}</h1>
+        {/* <h1 className='tex'>Hello {firstName}</h1> */}
         <div className='flex justify-center gap-3 my-10'>
             <div className="flex justify-center ">
                 <div className="card bg-base-300 w-96 shadow-sm">

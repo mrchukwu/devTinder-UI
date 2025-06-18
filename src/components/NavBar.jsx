@@ -10,6 +10,10 @@ const NavBar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  if (!user) {
+    return null; // or a loading spinner
+  }
+
   const handleLogout = async () => {
     try{
       await axios.post(BASE_URL + "/logout", {}, {withCredentials: true});
@@ -27,7 +31,7 @@ const NavBar = () => {
     </div>
     {user && ( 
     <div className="flex gap-2">
-        <p className="py-2 mr-4">Welcome, {user.user.firstName}</p>
+        <p className="py-2 mr-4">Welcome, {user?.user?.firstName}</p>
         <div className="form-control"></div>
 
       <div className="dropdown dropdown-end mx-5 flex ">
@@ -35,12 +39,12 @@ const NavBar = () => {
           <div className="w-10 rounded-full">
             <img
               alt="user photo"
-              src={user.user.photoUrl}  />
+              src={user?.user?.photoUrl}  />
           </div>
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-8 w-52 p-2 shadow">
+          className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-12 w-52 p-2 shadow">
           <li>
             <Link to="/profile" className="justify-between">Profile</Link>
           </li>
