@@ -37,7 +37,23 @@
 - Created SignUp feature, to create a new user
 - E2E => did end to end testing
 
+# Deployment
 
+- Signup to AWS
+- Launch an EC2 instance
+- Setup the remote server (configure neccessary details)
+- chmod 400 <secret>.pm
+- Login nto your systemssh -i "project-secret.pem" ubuntu@secret-key.ap-south-1.compute.amazonaws.com
+- Install Node version of your current node version project
+- Git clone your project repos
+    - Steps for frontend
+        - npm insall => installs dependencies
+        -npm run build => to build the project on remote server
+        - sudo apt update => to update the remote system
+        - sudo apt install nginx
+        -  sudo systemctl start nginx 
+        - sudo systemctl enable  nginx
+        - Copy code from dist(build files) 
 
 
 ## React + Vite
